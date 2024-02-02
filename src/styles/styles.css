@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: rgb(242, 247, 252);
+}
+.carousel-item{
+    height: 500px;
+}
+.navbar{
+    background-color: rgb(62, 143, 214);
+    font-size: 20px;
+}
+.navbar-brand img{
+    width: 20%;
+}
+.products{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    /* background-color: rgb(97, 152, 168); */
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.productContianer{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+}
+.products img{
+    width: 100%;
+    height: 350px;
+}
+.vote{
+    font-weight: bold;
+    font-size: 26px;
+    border-radius: 50%;
+    position: relative;
+}
+.product {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0; right: 0; left: 0; bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 5px #000;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    background: rgba(77, 77, 77, 0.548);
+    opacity: 0;
+    transition: all 0.5s;
+    font-family: 'Playfair Display', serif;
+}
+.items {
+    margin-top: 20px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.head {
+    font-size: 23px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+    hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px ;
+    position: absolute;
+    bottom: 0; left:20px;
+    transition: all .5s;
+    }
+}
+
+.price {
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: bold;  
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.cart {
+    width: 70%;
+    height: 40px;
+    opacity: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform: translateY(400px);
+    transition: all 0.7s;
+    i {
+    font-size: 16px;
+    }
+    span {
+    margin-left: 10px;
+    }
+}
+
+.product:hover .overlay {
+    opacity: 1;
+    & .head {
+    transform: translateY(0px);
+    }
+
+    & hr {
+    width: 75px;
+    transition-delay: 0.4s;
+    }
+
+    & .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+    }
+    & .cart {
+        transform: translateY(0px);
+        transition-delay: 0.1s;
+        opacity: 1;
+    }
+}
+.productInfo img{
+    width: auto;
+    height: 300px;
+}
+.cartList hr{
+    width: 100%;
+}
+.width-10{
+    width: 10px;
+}

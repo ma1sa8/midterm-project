@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "src/img/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <title>Home page</title>
+</head>
+<body class="body">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand col-4" href="index.html">
+            <img src="./src/img/logo.png" alt="logo">
+          </a>
+          <div class="collapse navbar-collapse justify-content-between fw-bold" id="navbarScroll">
+            <ul class="navbar-nav  gap-3 my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="allProducts.html">All products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+            <form class="d-flex gap-2 " role="search">
+                <a class="btn btn_secondary fw-bold" href="myCart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    My cart
+                </a>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <section class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="src/img/shop-men.jpg" class="d-block w-100" alt="shop men">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Shop men</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/img/shop-women.jpg" class="d-block w-100" alt="shop women">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Shop women</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/img/technology.webp" class="d-block w-100" alt="technology">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Shop tech</h3>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="container">
+        <div class="mt-5 row">
+            <h1>
+                Popular items
+            </h1>
+            <div id="main" class="productContianer mt-4 d-flex">
+                
+            </div>
+        </div>
+    </section>
+    <script src="src/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

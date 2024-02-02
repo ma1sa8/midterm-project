@@ -1,4 +1,3 @@
-const API_URL = 'https://fakestoreapi.com/products'
 const main = document.getElementById('main')
 const data = localStorage.getItem("productData");
 const product = JSON.parse(data);
